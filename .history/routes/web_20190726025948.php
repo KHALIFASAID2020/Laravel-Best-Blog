@@ -19,17 +19,12 @@ Route::get('/', function () {
 
 Route::get('/about', function () {
     //dd('chech the name of the function');
-    return view('pages.about');
+    return "<h1>About</h1>";
     //return view('welcome');
 });
 
 Route::get('/services', function () {
     //dd('chech the name of the function');
-    return view('pages.services');
-    //return view('welcome');
-});
-Route::get('/posts/{id}/{author}', function ($id,$author) {
-    //dd('chech the name of the function');
-    return "post with id : ".$id."with author ".$author;
+    return "<h1>Services Page</h1>";
     //return view('welcome');
 });

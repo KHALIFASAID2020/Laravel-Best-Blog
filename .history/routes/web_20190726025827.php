@@ -16,20 +16,3 @@ Route::get('/', function () {
     return "<h1>Welecome to laravel</h1>";
     //return view('welcome');
 });
-
-Route::get('/about', function () {
-    //dd('chech the name of the function');
-    return view('pages.about');
-    //return view('welcome');
-});
-
-Route::get('/services', function () {
-    //dd('chech the name of the function');
-    return view('pages.services');
-    //return view('welcome');
-});
-Route::get('/posts/{id}/{author}', function ($id,$author) {
-    //dd('chech the name of the function');
-    return "post with id : ".$id."with author ".$author;
-    //return view('welcome');
-});

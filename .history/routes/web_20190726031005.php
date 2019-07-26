@@ -30,6 +30,6 @@ Route::get('/services', function () {
 });
 Route::get('/posts/{id}/{author}', function ($id,$author) {
     //dd('chech the name of the function');
-    return "post with id : ".$id."with author ".$author;
+    return "post with id : ".$id."with author".$author;
     //return view('welcome');
 });

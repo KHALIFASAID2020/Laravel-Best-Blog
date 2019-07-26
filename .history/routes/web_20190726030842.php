@@ -28,8 +28,8 @@ Route::get('/services', function () {
     return view('pages.services');
     //return view('welcome');
 });
-Route::get('/posts/{id}/{author}', function ($id,$author) {
+Route::get('/posts/{id}', function ($id) {
     //dd('chech the name of the function');
-    return "post with id : ".$id."with author ".$author;
+    return "post with id : ".$id;
     //return view('welcome');
 });
